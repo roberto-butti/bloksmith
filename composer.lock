@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61eccc5dc89e08e92f1eea8940ff4dae",
+    "content-hash": "509db60363176d7cc51bb55eec1e17a0",
     "packages": [
         {
             "name": "brick/math",
@@ -1053,6 +1053,80 @@
                 }
             ],
             "time": "2025-02-03T10:55:03+00:00"
+        },
+        {
+            "name": "hi-folks/lara-lens",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Hi-Folks/lara-lens.git",
+                "reference": "f323ffc47f5279b63c90f4357a4bc7b29a5188e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Hi-Folks/lara-lens/zipball/f323ffc47f5279b63c90f4357a4bc7b29a5188e0",
+                "reference": "f323ffc47f5279b63c90f4357a4bc7b29a5188e0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.8",
+                "nunomaduro/termwind": "^1.15|^2.0",
+                "php": "^8.0|^8.1|^8.2|^8.3|^8.4"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^3.0|^4.0",
+                "larastan/larastan": "^2.0",
+                "laravel/pint": "^1.4",
+                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "pestphp/pest": "^2.34",
+                "pestphp/pest-plugin-laravel": "^1.2|^2.3",
+                "phpunit/phpunit": "^10.5",
+                "rector/rector": "^0.14|^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "LaraLens": "HiFolks\\LaraLens\\LaraLensFacade"
+                    },
+                    "providers": [
+                        "HiFolks\\LaraLens\\LaraLensServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "HiFolks\\LaraLens\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto Butti",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Diagnostic command for configuration, db connection, http request",
+            "homepage": "https://github.com/hi-folks/lara-lens",
+            "keywords": [
+                "cli",
+                "command-line",
+                "console",
+                "diagnostic",
+                "hi-folks",
+                "lara-lens",
+                "laravel",
+                "package"
+            ],
+            "support": {
+                "issues": "https://github.com/Hi-Folks/lara-lens/issues",
+                "source": "https://github.com/Hi-Folks/lara-lens/tree/v1.0.1"
+            },
+            "time": "2024-11-29T21:01:08+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3498,6 +3572,53 @@
             "time": "2024-04-27T21:32:50+00:00"
         },
         {
+            "name": "storyblok/php-management-api-client",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/storyblok/php-management-api-client.git",
+                "reference": "fa06e7bb0ab3e3c0f41233fba6a7733ff2ed0659"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/storyblok/php-management-api-client/zipball/fa06e7bb0ab3e3c0f41233fba6a7733ff2ed0659",
+                "reference": "fa06e7bb0ab3e3c0f41233fba6a7733ff2ed0659",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3",
+                "symfony/http-client": "^7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.65",
+                "pestphp/pest": "^3.7",
+                "phpstan/phpstan": "^2.0",
+                "rector/rector": "^2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Storyblok\\ManagementApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roberto Butti",
+                    "email": "roberto.butti@gmail.com"
+                }
+            ],
+            "description": "Storyblok PHP Client for Management API",
+            "support": {
+                "issues": "https://github.com/storyblok/php-management-api-client/issues",
+                "source": "https://github.com/storyblok/php-management-api-client/tree/v1.0.1"
+            },
+            "time": "2025-05-09T17:20:04+00:00"
+        },
+        {
             "name": "symfony/clock",
             "version": "v7.2.0",
             "source": {
@@ -4090,6 +4211,179 @@
                 }
             ],
             "time": "2024-12-30T19:00:17+00:00"
+        },
+        {
+            "name": "symfony/http-client",
+            "version": "v7.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client.git",
+                "reference": "78981a2ffef6437ed92d4d7e2a86a82f256c6dc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/78981a2ffef6437ed92d4d7e2a86a82f256c6dc6",
+                "reference": "78981a2ffef6437ed92d4d7e2a86a82f256c6dc6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "psr/log": "^1|^2|^3",
+                "symfony/deprecation-contracts": "^2.5|^3",
+                "symfony/http-client-contracts": "~3.4.4|^3.5.2",
+                "symfony/service-contracts": "^2.5|^3"
+            },
+            "conflict": {
+                "amphp/amp": "<2.5",
+                "php-http/discovery": "<1.15",
+                "symfony/http-foundation": "<6.4"
+            },
+            "provide": {
+                "php-http/async-client-implementation": "*",
+                "php-http/client-implementation": "*",
+                "psr/http-client-implementation": "1.0",
+                "symfony/http-client-implementation": "3.0"
+            },
+            "require-dev": {
+                "amphp/http-client": "^4.2.1|^5.0",
+                "amphp/http-tunnel": "^1.0|^2.0",
+                "amphp/socket": "^1.1",
+                "guzzlehttp/promises": "^1.4|^2.0",
+                "nyholm/psr7": "^1.0",
+                "php-http/httplug": "^1.0|^2.0",
+                "psr/http-client": "^1.0",
+                "symfony/amphp-http-client-meta": "^1.0|^2.0",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
+                "symfony/messenger": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0",
+                "symfony/rate-limiter": "^6.4|^7.0",
+                "symfony/stopwatch": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpClient\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides powerful methods to fetch HTTP resources synchronously or asynchronously",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "http"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/http-client/tree/v7.2.4"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-02-13T10:27:23+00:00"
+        },
+        {
+            "name": "symfony/http-client-contracts",
+            "version": "v3.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-client-contracts.git",
+                "reference": "ee8d807ab20fcb51267fdace50fbe3494c31e645"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/ee8d807ab20fcb51267fdace50fbe3494c31e645",
+                "reference": "ee8d807ab20fcb51267fdace50fbe3494c31e645",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
+                "branch-alias": {
+                    "dev-main": "3.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\HttpClient\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Test/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to HTTP clients",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/http-client-contracts/tree/v3.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-12-07T08:49:48+00:00"
         },
         {
             "name": "symfony/http-foundation",
