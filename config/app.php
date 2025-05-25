@@ -123,4 +123,7 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'storyblok' => [
+        'mapi_access_token' => env('APP_STORYBLOK_MAPI_ACCESS_TOKEN',"")
+    ],
 ];
