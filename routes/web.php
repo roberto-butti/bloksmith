@@ -17,6 +17,15 @@ Route::view('spaces', 'spaces')
 Route::view('spaces/{id}', 'space')
     ->middleware(['auth', 'verified'])
     ->name('space');
+Route::view('spaces/{id}/stories', 'stories')
+    ->middleware(['auth', 'verified'])
+    ->name('stories');
+Route::view('spaces/{spaceid}/stories/{storyid}', 'story')
+    ->middleware(['auth', 'verified'])
+    ->name('story');
+    Route::view('spaces/{id}/workflows', 'workflows')
+        ->middleware(['auth', 'verified'])
+        ->name('workflows');
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
